@@ -27,6 +27,6 @@ app.get("/", (req, res) => {
 
 app.use("/apis", postRoutes);
 
-app.listen(port, () => {
+module.exports = app.listen(port, () => {
     console.log(`The server is running at port ${port}.`);
 });
